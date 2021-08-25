@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 4</title>
+	<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+	<section>
+		<div class="slid">
+		<h1>My slider</h1>
+		<div class="flex-wrapper">
+			<div class="slider-wrapper">
+				<div class="slide active">
+					<img src="imeg_1.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="imeg_2.jpg" alt="">
+				</div>
+				<div class="slide">
+					<img src="imeg_3.jpg" alt="">
+				</div>
+				<div id="btn-prev"></div>
+            	<div id="btn-next"></div>
+				<div class="dots-wrapper">
+					<span class="dot active"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>	
+			</div>
+		</div>	
+	</div>
+	</section> <!--Раздел табов-->
+	<div class="tabs">
+		<h1>My tabs</h1>
+		<div class="tabs-block-wrapper">
+			<div id="tabs">
+				<div class="tab-btn active" data-btn="1">1</div>
+				<div class="tab-btn" data-btn="2">2</div>
+				<div class="tab-btn" data-btn="3">3</div>
+			</div>
+			<div id="contents">
+				<div class="content active" data-content="1">Content 1</div>
+				<div class="content" data-content="2">Content 2</div>
+				<div class="content" data-content="3">
+					<div id="intab">
+						<div class="intab-btn active" data-inbtn="1">Вариант 1</div>
+						<div class="intab-btn " data-inbtn="2">Вариант 2</div>
+					</div>	
+					<div id="incontent">
+						<div class="incontent active" data-incont=11>Внутреннее содержимое 1</div>
+						<div class="incontent" data-incont=22>Внутреннее содержимое 2</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="mainjs.js"></script>
+</body>
+</html>

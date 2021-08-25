@@ -1,0 +1,164 @@
+body {
+    background-color: darkgrey;
+    display: flex;
+    justify-content: space-around;
+}
+.slid {
+    float: left;
+}
+
+h1 {
+    font-family: 'Arial',sans-serif;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-wrapper {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    max-width: 800px;
+    width: 100%;
+    height: 334px;
+    position: relative;
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+}
+
+#btn-prev, #btn-next {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 334px;
+    width: 50px;
+    background-color: gray;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+#btn-prev:hover, #btn-next:hover {
+    opacity: 0.6;
+}
+
+#btn-next {
+    left: auto;
+    right: 0;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.dots-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot.active {
+    background-color: #000000;
+}
+
+span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+span:last-child{
+    margin-right: 0;
+}
+
+/* //section tabs */
+
+/* h1 {
+    width: 100%;
+    text-align: center; */
+}
+.tabs-block-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#tabs {
+    display: flex;
+}
+.tab-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.tab-btn.active {
+    background-color: blue;
+    color: #ffffff;
+}
+
+#contents {
+    max-width: 300px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    background: #ffffff;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+#intab{
+    display: flex;
+    
+}
+
+.intab-btn {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.intab-btn.active {
+    background-color: rgb(255, 230, 0);
+    color: #000000;
+}
+
+.incontent.active {
+    display: block;
+}
+
+.incontent {
+    display: none;
+}
